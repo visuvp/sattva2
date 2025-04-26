@@ -24,7 +24,242 @@
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
 </head>
 <body class="homepage8-body">
+  <style>
+    #priceTitle {
+ scroll-margin-top: 600px !important;
+}
+     .th-hero-wrapper {
+       background-color: #fff;
+     }
+     @media (min-width: 700px) {
+       .modal-dialog {
+         width: 400px;
+       }
+     }
 
+     .modal-content {
+       border-radius: 12px;
+       border: none;
+       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+     }
+
+     .btn-warning {
+       background-color: #bb8832;
+       border: none;
+     }
+
+     .btn-warning:hover {
+       background-color: #a67428;
+     }
+
+     input.form-control {
+       border-radius: 6px;
+       padding: 10px 15px;
+       font-size: 16px;
+     }
+
+     @media (max-width: 576px) {
+       .modal-dialog {
+         margin: 1rem;
+       }
+
+       .modal-content {
+         padding: 1rem;
+       }
+     }
+
+     .custom-modal {
+       background: #fff !important;
+       border-radius: 12px;
+       border: 1px solid rgba(0, 0, 0, 0.15);
+       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+       padding: 1rem;
+       position: relative;
+     }
+     .custom-modal .btn-close {
+       filter: invert(1); /* Turns black icon white */
+       opacity: 1;
+     }
+
+     /* Optional: Add hover effect */
+     .custom-modal .btn-close:hover {
+       filter: invert(0.8);
+     }
+     .custom-close {
+       position: absolute;
+       top: 10px;
+       right: 12px;
+       z-index: 10;
+     }
+
+     .modal-body input.form-control {
+       background-color: #f0f9f5;
+       border-radius: 8px;
+       padding: 10px;
+       border: 1px solid #ccc;
+       font-size: 14px;
+     }
+
+     .modal-body button.btn-warning {
+       background-color: #c88d2f;
+       border: none;
+       border-radius: 8px;
+       font-size: 16px;
+     }
+
+     .modal-body i.bi {
+       font-size: 16px;
+     }
+
+     .floor-img {
+       width: 100%;
+       height: 315px !important;
+       filter: blur(3px) !important;
+     }
+
+     /* price list*/
+.price-section {
+ width: 100%;
+ padding: 40px 20px;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+.price-section h2 {
+ color: #fcfcfc;
+ font-size: 2.5em;
+ margin-bottom: 40px;
+}
+
+.price-grid {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 30px;
+}
+
+.price-card {
+ background-color: #ddd;
+ width: 300px;
+ border-radius: 10px;
+ padding: 30px 20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ text-align: left;
+ position: relative;
+}
+
+.price-card h3 {
+ background-color: black;
+ color: white;
+ padding: 10px;
+ margin: -30px -20px 20px;
+ font-size: 1.2em;
+ border: 2px solid #b6892f;
+ text-align: center;
+}
+
+.price-card p {
+ margin: 10px 0;
+ font-size: 1.1em;
+}
+
+.price-card p span {
+ font-weight: bold;
+}
+
+.price-card .price {
+ font-weight: bold;
+ font-size: 1.2em;
+ color: #333;
+ text-align: center;
+}
+
+.price-card .btn {
+ display: inline-block;
+ margin-top: 20px;
+ padding: 12px 20px;
+ background-color: #2f2c84;
+ color: white;
+ border: none;
+ border-radius: 25px;
+ font-size: 1em;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+}
+
+.btn:hover {
+ background-color: #9a7226;
+}
+
+@media (max-width: 768px) {
+ .price-card {
+   width: 100%;
+   max-width: 90%;
+ }
+}
+.about-area-8{
+ padding-bottom:5rem
+}
+
+     .btn-floor {
+       margin: 24px;
+       background-color: #bb8832;
+       color: white;
+       padding: 12px 25px;
+       font-size: 16px;
+       border: none;
+       border-radius: 30px;
+       cursor: pointer;
+       font-weight: bold;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+       transition: background-color 0.3s ease;
+     }
+
+     .btn-floor:hover {
+       background-color: #a16e1c;
+     }
+     .sidebar-btn{
+       background-color: transparent;
+     }
+     .header-layout4 .menu-area,.header-layout4 .sticky-wrapper.sticky,.bg-theme{
+background-color: #E1E3E6 !important
+     }
+     .about-area-8,#features,#ourLocations,.pfd-card,.mobile-logo,#contact-sec,#priceList{
+       background-color:#ffffff !important ;
+     }
+.main-menu a,.text-theme,.sub-title3,.hero-8 .about-tag .about-experience-tag,.sub-title3,.sec-title,.checklist.style6 li,.btn-title,.priceList{
+ color: #2f2c84 !important;
+}
+.checklist.style6 li:before{
+ filter: brightness(0.5);
+}
+.th-btn.style-border,.th-btn.style-border:hover,.sidebar-btn.style2 .line,.th-btn.style2,.style5,.sidebar-btn span{
+ background-color:#2f2c84 !important
+}
+.th-btn,.th-btn:hover,.th-btn.style-border:hover{
+ color:#ffffff;
+ cursor: pointer;
+}
+.th-btn.style-border4,.property-plan-tabs .nav-item .nav-link{
+ border: 1px solid #2f2c84;
+ color: #2f2c84 !important;
+}
+.th-btn.style-border4:hover,.property-plan-tabs .nav-item .nav-link.active,.th-btn{
+ background-color:#2f2c84 ;
+ color:#ffffff !important;
+}
+.hero-8{
+ padding-top: 10rem !important;
+ margin-bottom: 34px !important;
+}
+.hero-desc{
+ color:#A4B5BA !important
+}
+#features {
+ scroll-margin-top: 80px; /* Adjust this based on your header height */
+}
+   </style>
 <!--===== PRELOADER STARTS =======-->
 <div class="preloader"></div>
 <!--===== PRELOADER ENDS =======-->
@@ -61,22 +296,24 @@
                 </div>
                 <div class="main-menu">
                   <ul>
+                    <li class="nav-item"><a href="#hero" class="nav-link active"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#amenities" class="nav-link"><span>Amenities</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link active"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#property" class="nav-link"><span>Property</span></a></li>
-                    <li class="nav-item"><a href="#apartment" class="nav-link"><span>Apartment</span></a></li>
+                    <!-- <li class="nav-item"><a href="#property" class="nav-link"><span>Property</span></a></li>
+                    <li class="nav-item"><a href="#apartment" class="nav-link"><span>Apartment</span></a></li> -->
                     <li class="nav-item"><a href="#gallery" class="nav-link"><span>Gallery</span></a></li>
-                    <li class="nav-item"><a href="#testimonial" class="nav-link"><span>Testimonials</span></a></li>
+                    <!-- <li class="nav-item"><a href="#testimonial" class="nav-link"><span>Testimonials</span></a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link"><span>Blogs</span></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
                 <div class="btn-area">
-                  <div class="search-icon header__search header-search-btn">
+                  <!-- <div class="search-icon header__search header-search-btn">
                     <a href="#"><img src="assets/img/icons/search-icon1.svg" alt=""> <span></span></a>
-                  </div>
-                  <a href="contact.html" class="header-btn4">Schedule A Visit <i class="fa-solid fa-arrow-right"></i></a>
+                  </div> -->
+                  <a href="contact.html" class="header-btn4 openCallbackModal">Schedule A Visit <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
   
-                <div class="header-search-form-wrapper">
+                <!-- <div class="header-search-form-wrapper">
                   <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
                   <div class="header-search-container">
                       <form role="search" class="search-form">
@@ -84,7 +321,7 @@
                       <button type="submit" class="search-submit"><img src="assets/img/icons/search-icon1.svg" alt=""></button>
                       </form>
                   </div>
-              </div>
+              </div> -->
               <div class="body-overlay"></div>
               </div>
             </nav>
@@ -94,7 +331,68 @@
     </div>
   </header>
   <!--=====HEADER END =======-->
+  <!-- Modal -->
+  <div
+  class="modal fade"
+  id="callbackModal"
+  tabindex="-1"
+  aria-labelledby="callbackModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <button
+        type="button"
+        class="btn-close custom-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
 
+      <div class="modal-body text-center">
+        <img
+          src="assets/img/logo/sattva-logo-nobg.png"
+          alt="Sattva Logo"
+          class="img-fluid mb-3"
+          style="max-height: 60px"
+        />
+        <form id="contact-form">
+        <input
+        name="name"
+          type="text"
+          class="form-control mb-2"
+          placeholder="Your Full Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          class="form-control mb-2"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          type="text"
+          name="mobile"
+          class="form-control mb-3"
+          placeholder="Phone/Mobile"
+          required
+        />
+        <input type="hidden" name="_cc" value="visupriya.udt@gmail.com,sujaymaster111@gmail.com">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" name="mobile" class="btn btn-warning w-100 fw-bold mb-2">
+          GET CALL BACK
+        </button>
+      </form>
+        <button
+          class="btn btn-warning w-100 d-flex align-items-center justify-content-center"
+        >
+          <i class="bi bi-telephone-fill me-2"></i> +916364840379
+        </button>
+        <div id="status" style="color: green;margin-top: 1rem;"></div>
+      </div>
+    </div>
+  </div>
+</div>
   <!--===== MOBILE HEADER STARTS =======-->
   <div class="mobile-header mobile-haeder8 d-block d-lg-none">
     <div class="container-fluid">
@@ -122,46 +420,9 @@
      </div>
     <div class="mobile-nav mobile-nav1">
       <ul class="mobile-nav-list nav-list1">
-        <li><a href="#" >Home </a>
-          <ul class="sub-menu">
-            <li>
-              <a href="#">Multiple Page</a>
-              <ul class="sub-menu">
-                <li><a href="index.html">Home One</a></li>
-                <li><a href="index2.html">Home Two</a></li>
-                <li><a href="index3.html">Home Three</a></li>
-                <li><a href="index4.html">Home Four</a></li>
-                <li><a href="index5.html">Home Five</a></li>
-                <li><a href="index6.html">Home Six</a></li>
-                <li><a href="index7.html">Home Seven</a></li>
-                <li><a href="index8.html">Home Eight</a></li>
-                <li><a href="index9.html">Home Nine</a></li>
-                <li><a href="index10.html">Home Ten</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Landing Page</a>
-              <ul class="sub-menu">
-                <li><a href="single-index1.html" target="_blank">Home One</a></li>
-                <li><a href="single-index2.html" target="_blank">Home Two</a></li>
-                <li><a href="single-index3.html" target="_blank">Home Three</a></li>
-                <li><a href="single-index4.html" target="_blank">Home Four</a></li>
-                <li><a href="single-index5.html" target="_blank">Home Five</a></li>
-                <li><a href="single-index6.html" target="_blank">Home Six</a></li>
-                <li><a href="single-index7.html" target="_blank">Home Seven</a></li>
-                <li><a href="single-index8.html" target="_blank">Home Eight</a></li>
-                <li><a href="single-index9.html" target="_blank">Home Nine</a></li>
-                <li><a href="single-index10.html" target="_blank">Home Ten</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+        <li class="nav-item"><a href="#hero" class="nav-link active"><span>Home</span></a></li>
         <li class="nav-item"><a href="#about" class="nav-link active"><span>About</span></a></li>
-        <li class="nav-item"><a href="#property" class="nav-link"><span>Property</span></a></li>
-        <li class="nav-item"><a href="#apartment" class="nav-link"><span>Apartment</span></a></li>
         <li class="nav-item"><a href="#gallery" class="nav-link"><span>Gallery</span></a></li>
-        <li class="nav-item"><a href="#testimonial" class="nav-link"><span>Testimonials</span></a></li>
-        <li class="nav-item"><a href="#blog" class="nav-link"><span>Blogs</span></a></li>
       </ul>
   
       <div class="allmobilesection">
@@ -220,7 +481,7 @@
 <!--===== MOBILE HEADER STARTS =======-->
 
 <!--===== HERO AREA STARTS =======-->
-<div class="space80"></div>
+<div class="space80" id="hero"></div>
 <div class="header3-slick-slider">
     <div class="hero8-main-area">
       <div class="bg-img1">
@@ -318,7 +579,7 @@
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
 
 <!--===== PROPERTY AREA STARTS =======-->
-<div class="property8-section-area sp6" id="about">
+<!-- <div class="property8-section-area sp6" id="about">
     <div class="img1">
       <img src="assets/img/all-images/property/property-img6.png" alt="">
     </div>
@@ -330,7 +591,7 @@
         <div class="col-lg-7">
         </div>
         <div class="col-lg-5">
-          <div class="property-header heading8">
+          <div class="property-header heading3">
             <h5 data-aos="fade-left" data-aos-duration="800">Property Overview</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Elegance Every Detail Welcome Diamond V.</h2>
@@ -350,7 +611,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--===== PROPERTY AREA ENDS =======-->
 
 <!--===== ABOUT AREA STARTS =======-->
@@ -358,7 +619,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-5 m-auto">
-                <div class="about-header text-center heading8 space-margin60">
+                <div class="about-header text-center heading3 space-margin60">
                     <h5 data-aos="fade-left" data-aos-duration="800">our best properties</h5>
                     <div class="space20"></div>
                     <h2 class="text-anime-style-3">Explore Our Premier Of
@@ -466,8 +727,8 @@
                 <img src="assets/img/all-images/about/about-img11.png" alt="">
               </div>
             </div>
-        <div class="col-lg-6">
-          <div class="heading7 author-header heading8">
+        <div class="col-lg-6" >
+          <div class="heading7 author-header heading3" id="about">
             <h5 data-aos="fade-left" data-aos-duration="800">About apartment</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Embrace The Elegance Our Exclusive Property</h2>
@@ -505,7 +766,7 @@
             </div>
             <div class="space40"></div>
             <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-              <a href="contact.html" class="header-btn4"> Schedule A Visit <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="contact.html" class="header-btn4 openCallbackModal"> Schedule A Visit <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -517,12 +778,154 @@
 </div>
 <!--===== ABOUT AREA ENDS =======-->
 
+<!--===== OTHERS FACT AREA STARTS =======-->
+<div class="others1-section-area sp4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="800">
+        <div class="others-box">
+          <div class="icons">
+            <img src="assets/img/icons/others-icon1.svg" alt="">
+          </div>
+          <div class="space16"></div>
+          <p>24/7 Support</p>
+        </div>
+        <div class="space30 d-lg-none d-block"></div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-down" data-aos-duration="1000">
+        <div class="others-box">
+          <div class="icons">
+            <img src="assets/img/icons/others-icon2.svg" alt="">
+          </div>
+          <div class="space16"></div>
+          <p>Swimming Pool</p>
+        </div>
+        <div class="space30 d-lg-none d-block"></div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1100">
+        <div class="others-box">
+          <div class="icons">
+            <img src="assets/img/icons/others-icon3.svg" alt="">
+          </div>
+          <div class="space16"></div>
+          <p>GYM & Fitness</p>
+        </div>
+        <div class="space30 d-md-none d-block"></div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-down" data-aos-duration="1200">
+        <div class="others-box">
+          <div class="icons">
+            <img src="assets/img/icons/others-icon4.svg" alt="">
+          </div>
+          <div class="space16"></div>
+          <p>CAR Storage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== OTHERS FACT AREA ENDS =======-->
+
+<!--===== AMENITIES AREA STARTS =======-->
+<div class="service1-section-area sp1" id="amenities">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="service-header heading3 space-margin60">
+          <h5 data-aos="fade-left" data-aos-duration="800">Building amenities</h5>
+          <div class="space20"></div>
+          <h2 class="text-anime-style-3">Outstanding Way <br class="d-lg-block d-none">
+            Of Luxury Life</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="service-slider-area owl-carousel">
+          <div class="service-slider-box ">
+            <div class="img1">
+              <img src="assets/img/all-images/service/service-img1.png" alt="">
+            </div>
+            <div class="content">
+              <a href="apartment-v1.html">Swimming Pool</a>
+            </div>
+            <div class="btn-area1">
+              <a href="apartment-v1.html" class="openCallbackModal">View</a>
+            </div>
+          </div>
+
+          <div class="service-slider-box">
+            <div class="img2">
+              <img src="assets/img/all-images/service/service-img2.png" alt="">
+            </div>
+            <div class="content2">
+              <a href="apartment-v1.html">Smart Living</a>
+            </div>
+            <div class="btn-area1">
+              <a href="apartment-v1.html" class="openCallbackModal">View</a>
+            </div>
+          </div>
+
+          <div class="service-slider-box">
+            <div class="img3">
+              <img src="assets/img/all-images/service/service-img3.png" alt="">
+            </div>
+            <div class="content">
+              <a href="apartment-v1.html">New Construction</a>
+            </div>
+            <div class="btn-area1">
+              <a href="apartment-v1.html" class="openCallbackModal">View</a>
+            </div>
+          </div>
+
+          <div class="service-slider-box ">
+            <div class="img1">
+              <img src="assets/img/all-images/service/service-img1.png" alt="">
+            </div>
+            <div class="content">
+              <a href="apartment-v1.html">Swimming Pool</a>
+            </div>
+            <div class="btn-area1">
+              <a href="apartment-v1.html" class="openCallbackModal">View</a>
+            </div>
+          </div>
+
+          <div class="service-slider-box">
+            <div class="img2">
+              <img src="assets/img/all-images/service/service-img2.png" alt="">
+            </div>
+            <div class="content2">
+              <a href="apartment-v1.html">Smart Living</a>
+            </div>
+            <div class="btn-area1">
+              <a href="apartment-v1.html" class="openCallbackModal">View</a>
+            </div>
+          </div>
+
+          <div class="service-slider-box">
+            <div class="img3">
+              <img src="assets/img/all-images/service/service-img3.png" alt="">
+            </div>
+            <div class="content">
+              <a href="apartment-v1.html">New Construction</a>
+            </div>
+            <div class="btn-area1">
+              <a href="apartment-v1.html" class="openCallbackModal">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== AMENITIES AREA ENDS =======-->
+
 <!--===== GALLERY AREA STARTS =======-->
 <div class="gallery8-section-area sp6" id="gallery">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 m-auto">
-        <div class="galler-header text-center heading8 space-margin60">
+        <div class="galler-header text-center heading3 space-margin60">
           <h5 data-aos="fade-left" data-aos-duration="800">our gallery</h5>
           <div class="space20"></div>
           <h2 class="text-anime-style-3">Diamond Apartment Gallery</h2>
@@ -537,7 +940,7 @@
               <img src="assets/img/all-images/gallery/gallery-img2.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
 
@@ -546,7 +949,7 @@
               <img src="assets/img/all-images/gallery/gallery-img3.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
 
@@ -555,7 +958,7 @@
               <img src="assets/img/all-images/gallery/gallery-img5.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
           <div class="content-area">
@@ -563,7 +966,7 @@
               <img src="assets/img/all-images/gallery/gallery-img6.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
         </div>
@@ -574,7 +977,7 @@
               <img src="assets/img/all-images/gallery/gallery-img7.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
 
@@ -583,7 +986,7 @@
               <img src="assets/img/all-images/gallery/gallery-img8.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
 
@@ -592,7 +995,7 @@
               <img src="assets/img/all-images/gallery/gallery-img9.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
           <div class="content-area">
@@ -600,7 +1003,7 @@
               <img src="assets/img/all-images/gallery/gallery-img7.png" alt="">
             </div>
             <div class="icons">
-              <a href="gallery-v1.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="gallery-v1.html" class="openCallbackModal"><i class="fa-solid fa-plus"></i></a>
             </div>
           </div>
         </div>
@@ -611,12 +1014,12 @@
 <!--===== GALLERY AREA ENDS =======-->
 
 <!--===== TESTIMONIAL AREA STARTS =======-->
-<div class="testimonial8-section-area sp1" id="testimonial">
+<!-- <div class="testimonial8-section-area sp1" id="testimonial">
     <div class="container">
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
-          <div class="testimonial-header space-margin60 heading8">
+          <div class="testimonial-header space-margin60 heading3">
             <h5 data-aos="fade-left" data-aos-duration="800">client feedback</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Hear What Our Client Say About Property</h2>
@@ -746,11 +1149,11 @@
         </div>
       </div>
     </div>
-</div>
+</div> -->
 <!--===== TESTIMONIAL AREA ENDS =======-->
 
 <!--===== CONTACT AREA STARTS =======-->
-<div class="contact8-section-area sp5">
+<!-- <div class="contact7-section-area sp5">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
@@ -778,15 +1181,37 @@
         </div>
       </div>
     </div>
-</div>
+</div> -->
 <!--===== CONTACT AREA ENDS =======-->
-
-<!--===== BLOG AREA STARTS =======-->
-<div class="blog8-section-area sp7" id="blog">
+<!--===== CTA AREA STARTS =======-->
+<div class="cta4-section-area sp4">
   <div class="container">
     <div class="row">
       <div class="col-lg-5 m-auto">
-        <div class="blog-header text-center heading8 space-margin60">
+        <div class="cta-header-area heading3 text-center">
+          <h2 data-aos="fade-up" data-aos-duration="1000" class="openCallbackModal">Schedule A Visit Now</h2>
+          <div class="space16"></div>
+          <p data-aos="fade-up" data-aos-duration="1100">Experience the pinnacle of luxury living at our exclusive property, where every detail has been meticulously crafted to provide an unparalleled retreat. Nestled in the heart of, this haven offers.</p>
+          <div class="space32"></div>
+          <div class="btn-area1" data-aos="fade-up" data-aos-duration="1200">
+            <a href="contact.html" class="header-btn5 openCallbackModal">Schedule A Visit <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="popup-youtube">
+              <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+              <span class="text">Video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== CTA AREA ENDS =======-->
+<!--===== BLOG AREA STARTS =======-->
+<!-- <div class="blog8-section-area sp7" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 m-auto">
+        <div class="blog-header text-center heading3 space-margin60">
           <h5 data-aos="fade-left" data-aos-duration="800">Our Blog</h5>
           <div class="space20"></div>
           <h2 class="text-anime-style-3">Our News & Articles</h2>
@@ -849,7 +1274,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!--===== BLOG AREA ENDS =======-->
 
 <!--===== FOOTER AREA STARTS =======-->
@@ -862,24 +1287,44 @@
               <div class="col-lg-6">
                 <div class="footer-contact-box" data-aos="zoom-in-up" data-aos-duration="1000">
                     <h3>Send Us A Message</h3>
+                    <form id="contact-form2">
+
+                   
                     <div class="space16"></div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="space16"></div>
                             <div class="input-area">
-                                <input type="text" placeholder="Your Name*">
+                                <input type="text" name="name"
+                                id="name" placeholder="Your Name*" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="space16"></div>
                             <div class="input-area">
-                                <input type="number" placeholder="Mobile Number*">
+                                <input type="number" name="mobile"
+                                id="mobile" placeholder="Mobile Number*" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="space16"></div>
+                            <div class="input-area">
+                                <input type="email" name="email"
+                                id="email" placeholder="Your Email*" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="space16"></div>
+                            <div class="input-area">
+                                <input type="number" name="secondaryNumber"
+                                id="secondaryNumber" placeholder="Secondary Number">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="space16"></div>
                             <div class="input-area">
-                               <textarea name="#" id="#" placeholder="Your Message*"></textarea>
+                               <textarea name="message"
+                               id="message" placeholder="Your Message"></textarea>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -887,8 +1332,10 @@
                             <div class="input-area text-end">
                                 <button type="submit" class="header-btn4">Send Message <i class="fa-solid fa-arrow-right"></i></button>
                             </div>
+                            <div id="status2" style="color: green;margin-top: 1rem;"></div>
                         </div>
                     </div>
+                  </form>
                 </div>
               </div>
               <div class="col-lg-6">
@@ -1021,6 +1468,98 @@
 <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
 <script src="assets/js/plugins/Splitetext.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+  function openCallbackModal() {
+    const modalElement = document.getElementById("callbackModal");
+    const modal = new bootstrap.Modal(modalElement);
+    modal.show();
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.querySelector(".th-menu-toggle");
+
+    document
+      .querySelectorAll(".th-mobile-menu ul li")
+      .forEach(function (item) {
+        item.addEventListener("click", function () {
+          closeBtn.click(); // simulate click on close button
+        });
+      });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".openCallbackModal").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault(); // prevent going to contact.html
+        openCallbackModal(); // your modal function
+      });
+    });
+  });
+</script>
+<script>
+   document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent page reload
+
+        const form = e.target;
+        const data = new FormData(form);
+
+        fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
+          method: "POST",
+          body: data
+        })
+        .then(response => {
+          document.getElementById("status").innerText = "Thank you! Your message has been sent.";
+          form.reset();
+        })
+        .catch(error => {
+          document.getElementById("status").innerText = "Oops! Something went wrong.";
+        });
+
+      })
+      document.getElementById("contact-form2").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent page reload
+
+        const form = e.target;
+        const data = new FormData(form);
+
+        fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
+          method: "POST",
+          body: data
+        })
+        .then(response => {
+          document.getElementById("status2").innerText = "Thank you! Your message has been sent.";
+          form.reset();
+        })
+        .catch(error => {
+          document.getElementById("status2").innerText = "Oops! Something went wrong.";
+        });
+
+      })
+  
+</script>
+<script>
+  // Create anchor link
+  const waLink = document.createElement("a");
+  waLink.href = "https://wa.me/916364840379"; // Replace with your number
+  waLink.target = "_blank";
+  waLink.style.position = "fixed";
+  waLink.style.bottom = "100px";
+  waLink.style.right = "40px";
+  waLink.style.zIndex = "9999";
+  waLink.style.backgroundColor = "#25D366";
+  waLink.style.padding = "12px";
+  waLink.style.borderRadius = "50%";
+  waLink.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)";
+  waLink.style.color = "white";
+  waLink.style.textAlign = "center";
+
+  // Create icon
+  const waIcon = document.createElement("i");
+  waIcon.className = "fab fa-whatsapp";
+  waIcon.style.fontSize = "24px";
+
+  // Append and show
+  waLink.appendChild(waIcon);
+  document.body.appendChild(waLink);
+</script>
 
 </body>
 </html>

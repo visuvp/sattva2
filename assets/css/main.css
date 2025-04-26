@@ -2778,7 +2778,7 @@ Location:
   border-radius: 16px;
 }
 .about8-author-section-area .experience-box {
-  background: var(--ztc-bg-bg-18);
+  background: var(--ztc-bg-bg-9);
   border-radius: 16px;
   padding: 32px 47px 65px 32px;
 }
@@ -2824,7 +2824,7 @@ Location:
   display: inline-block;
   transition: all 0.4s;
   border-radius: 50%;
-  background: var(--ztc-bg-bg-18);
+  background: var(--ztc-bg-bg-8);
   color: var(--ztc-text-text-1);
   position: relative;
 }
@@ -14693,7 +14693,7 @@ Location:
   padding: 0;
 }
 .homepage8-body .header-area.homepage8 nav#navbar-example2 ul li a.nav-link.active {
-  color: var(--ztc-text-text-22);
+  color: var(--ztc-text-text-8);
 }
 .homepage8-body .header-area.homepage8 .header-elements {
   display: flex;
@@ -17381,7 +17381,7 @@ Location:
 .others1-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/fact-bg1.png);
+  background-image: url(../img/bg/dashboard-img2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17406,7 +17406,7 @@ Location:
   padding: 32px;
 }
 .others1-section-area .others-box:hover {
-  background: var(--ztc-bg-bg-2);
+  background: var(--ztc-bg-bg-8);
   transition: all 0.4s;
   transform: translateY(-5px);
 }
@@ -18514,7 +18514,7 @@ Location:
 .cta4-section-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-10);
+  background: var(--ztc-bg-bg-8);
 }
 .cta4-section-area .cta-header-area h2 {
   color: var(--ztc-text-text-1);
