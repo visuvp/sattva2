@@ -14683,7 +14683,10 @@ Location:
 }
 .homepage8-body .header-area.homepage8 .site-logo {
   height: 48px;
-  width: 180px;
+  width: 251px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .homepage8-body .header-area.homepage8 nav#navbar-example2 {
   display: block;
