@@ -979,7 +979,7 @@ $('.details-slider').owlCarousel({
 $(window).on("load", function (event) {
   setTimeout(function () {
     $(".preloader").fadeToggle();
-  }, 200);
+  }, 400);
 
 //========== GSAP AREA ============= //
 
