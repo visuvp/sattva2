@@ -638,6 +638,7 @@ Location:
   padding: 17px 24px;
   position: relative;
   z-index: 1;
+  
 }
 .header-btn1:hover {
   transition: all 0.4s;
@@ -24143,3 +24144,63 @@ Location:
 }
 
 /*============= GALLERY CSS AREA ===============*//*# sourceMappingURL=main.css.map */
+
+
+/* location */
+
+.location-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.location-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.location-description {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.location-item {
+  text-align: center;
+}
+
+.location-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.location-item p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
+
